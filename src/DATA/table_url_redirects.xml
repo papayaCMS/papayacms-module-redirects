@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<table name="url_redirects" prefix="yes" type="transactions">
+  <fields>
+    <field name="redirect_id" type="integer" size="4" null="no" autoinc="yes"/>
+    <field name="redirect_priority" type="integer" size="4" null="no"/>
+    <field name="redirect_label" type="integer" size="4" null="no"/>
+    <field name="redirect_status" type="integer" size="4" null="no" default="410"/>
+    <field name="redirect_title" type="string" size="255" null="no"/>
+    <field name="redirect_pattern" type="string" size="65535" null="no"/>
+    <field name="redirect_target" type="string" size="65535" null="no"/>
+    <field name="redirect_enabled" type="integer" size="2" null="no"/>
+  </fields>
+  <keys>
+    <primary-key>
+      <field>redirect_id</field>
+    </primary-key>
+    <key name="redirect_title">
+      <field>redirect_title</field>
+    </key>
+  </keys>
+</table>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<modulegroup>
+  <name>404 Redirects</name>
+  <description></description>
+  <prefix>PapayaModuleRedirects</prefix>
+  <modules>
+    <module
+      type="admin"
+      guid="041daec323194aa69dd7b5d3c467a5d6"
+      name="404 Redirects"
+      class="edmodule_redirects"
+      file="edmodule_redirects.php"
+      glyph="redirects.png">404 Redirect Administration</module>
+    <module
+      type="page"
+      guid="4df5fc507806a9c6849f12c8d5f42fc0"
+      name="404 Error Redirects Page"
+      class="PapayaModuleRedirectsPage"
+      file="Page.php">404 redirect page based on configurable rules</module>
+  </modules>
+  <tables>
+    <table name="url_redirects"/>
+  </tables>
+</modulegroup>
