@@ -1,10 +1,5 @@
 <?php
-include_once(dirname(__FILE__).'/../../../../../bootstrap.php');
-PapayaTestCase::registerPapayaAutoloader(
-  array(
-    'PapayaModuleRedirects' => 'modules/free/redirects'
-  )
-);
+include_once(dirname(__FILE__).'/../bootstrap.php');
 
 class PapayaModuleRedirectsFilterHostTest extends PapayaTestCase {
 
