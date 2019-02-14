@@ -370,7 +370,7 @@ class PapayaModuleRedirectsAdministrationContentChange
 
   public function callbackExecuteSuccessful() {
     $this->papaya()->messages->display(
-      PapayaMessage::SEVERITY_INFO, new PapayaUiStringTranslated('Redirect rule saved.')
+      PapayaMessage::SEVERITY_INFO, 'Redirect rule saved.'
     );
     $this->clipboard()->redirectRule = iterator_to_array($this->record());
   }

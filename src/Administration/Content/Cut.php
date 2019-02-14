@@ -52,12 +52,10 @@ class PapayaModuleRedirectsAdministrationContentCut
       $this->clipboard()->redirectRule = iterator_to_array($this->_record);
       $this->papaya()->messages->display(
         PapayaMessage::SEVERITY_INFO,
-        new PapayaUiStringTranslated(
-          'Rule #%d "%s" is now on clipboard.',
-          array(
-            $this->_record['id'],
-            $this->_record['title']
-          )
+        'Rule #%d "%s" is now on clipboard.',
+        array(
+          $this->_record['id'],
+          $this->_record['title']
         )
       );
     }

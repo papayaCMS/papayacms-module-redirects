@@ -77,7 +77,7 @@ class PapayaModuleRedirectsAdministrationContentDelete
 
   public function callbackExecuteSuccessful() {
     $this->papaya()->messages->display(
-      PapayaMessage::SEVERITY_INFO, new PapayaUiStringTranslated('Redirect rule deleted.')
+      PapayaMessage::SEVERITY_INFO, 'Redirect rule deleted.'
     );
     /** @var PapayaModuleRedirectsContentRedirect $record */
     $record = $this->record();

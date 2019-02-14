@@ -58,7 +58,7 @@ class PapayaModuleRedirectsAdministrationContentMove
       if ($result) {
         $this->papaya()->messages->display(
           PapayaMessage::SEVERITY_INFO,
-          new PapayaUiStringTranslated('Rule priority changed.')
+          'Rule priority changed.'
         );
       }
     } else {
